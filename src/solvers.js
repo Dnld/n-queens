@@ -90,11 +90,10 @@ window.findNQueensSolution = function(n) {
         minors.pop();
       }
     }
+    solution = new Board({n:n}).rows();
   };
   
   findBoard();
-
-
 
   console.log('Single solution for ' + n + ' queens:', JSON.stringify(solution));
   return solution;
